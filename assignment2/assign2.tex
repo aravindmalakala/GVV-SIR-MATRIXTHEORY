@@ -1,0 +1,83 @@
+\let\negmpace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\title{Question-1-1.5-17}
+\author{EE24BTECH11038 - MALAKALA BALA SUBRAHMANYA ARAVIND}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\textbf{Question}:\\
+The midpoint of line segment joining $\vec{A}\brak{2a,4}$ and$\vec{B}\brak{-2,3b}$ is $\brak{1,2a+1}$. Find the values of a and b.\\
+\textbf{Solution}:\\
+\begin{table}[h!]
+   \centering
+   \input{tables/table.tex}
+   \caption{variables used}
+   \label{tabQuestion-1-1.5-17}
+\end{table}   
+\begin{align}
+    \vec{C}=\frac{\vec{A}+\vec{B}}{2}
+\end{align}
+Now substituting the values of $\vec{A}$, $\vec{B}$ and $\vec{C}$ 
+\begin{align}
+    \implies \myvec {1\\2a+1}=\frac{\myvec{2a\\4}+\myvec{-2\\3b}}{2}\\
+    \implies \myvec{1\\2a+1}=\myvec{a-1\\4+\frac{3b}{2}}
+\end{align}
+\begin{align}
+    \implies a-1=1\\
+    \implies a=2
+\end{align} 
+\begin{align}
+    \implies 2a+1=a+\frac{3b}{2}\\
+    \implies 3=\frac{3b}{2}\\
+    \implies b=2\\
+\end{align}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figs/Figure_1.png}
+    \caption{stem plot of line $\vec{A}\vec{B}$}
+    \label{stemplot}
+\end{figure}
+\end{document}
