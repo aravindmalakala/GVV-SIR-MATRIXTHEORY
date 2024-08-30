@@ -13,7 +13,7 @@ int main() {
 	A=createMat(2,2);
 	B=createMat(2,1);
 	C=createMat(2,1);
-	A[0][0]=-1;
+	A[0][0]=1;
 	A[0][1]=0;
 	A[1][0]=(float) 4/3;
 	A[1][1]=(float) -1/3;
