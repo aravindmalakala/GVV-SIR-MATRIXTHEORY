@@ -20,7 +20,7 @@ int main() {
 	A[2][0]=4;
 	A[2][1]=5;
 	A[2][2]=1;
-	A[0][0]=(A[1][1]*A[2][0]-A[1][0]*A[2][1]+A[0][1]*(A[1][0]-A[2][0]))/(A[1][1]-A[2][1]);
+	A[0][0]=(A[1][1]*A[2][0]-A[1][0]*A[2][1]+A[0][1]*(A[1][0]-A[2][0]))/(A[1][1]-A[2][1]);//Determinant of matrix A is 0
         FILE *file=fopen("output.dat","w");
 	if (file == NULL)  {
 		printf("Error opening file!\n");
