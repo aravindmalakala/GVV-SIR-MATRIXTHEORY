@@ -54,25 +54,42 @@ Find the direction and normal vectors of the following line:\\
 x+2y=6
 \\
 \solution \\
-\begin{table}[h!]
+\begin{table}[!ht]
   \centering
-  \input{table.tex}
+  \input{tables/table.tex}
   \caption{variables used}
   \label{tabQuestion-4-4.2-22}
 \end{table}\\
-For the line of form Ax+By+C=0 the normal vector is given by
 \begin{align}
-    n&=\myvec{A\\B}\\
-    A=1,B=2\\
-    \implies n&=\myvec{1\\2}
+    y &= mx + c \\
+    x &= 0 \Rightarrow y = c \\
+    x &= 1 \Rightarrow y = mx + c \\
+    x &= h + m  
 \end{align}
-Let the direction vector be d=$\myvec{a\\b}$
 \begin{align}
-    d^T.n&=0\\
-    a+2b&=0\\
-    \implies d&=\myvec{-2\\1}
+    m^\top n = 0\\
+    n^\top x = n^\top h + \kappa n^\top m \\
+    \Rightarrow n (x - h) = 0 \\
+    n^\top x = c \\
+    c = n^\top h 
 \end{align}
-\begin{figure}[h!]
+\begin{align}
+    \text{where} \quad n =\begin{pmatrix}-m \\1\end{pmatrix}
+\end{align}
+For the line \( 2y + x =  6 \):
+\begin{align}
+m &= -\frac{1}{2}
+\end{align}
+\begin{align}
+\text{Direction vector } m = \begin{pmatrix} 1 \\ m \end{pmatrix} = \begin{pmatrix} 1 \\ -\frac{1}{2} \end{pmatrix} \\
+\implies \begin{pmatrix} -2 \\ 1 \end{pmatrix}
+\end{align}
+The normal vector is defined by:
+\begin{align}
+n = \begin{pmatrix} -m \\ 1 \end{pmatrix} = \begin{pmatrix} \frac{1}{2} \\ 1 \end{pmatrix}\\
+\implies \begin{pmatrix} 1 \\ 2 \end{pmatrix}
+\end{align}
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=\linewidth]{figs/Desktop.png}
     \caption{ Line $Line x+2y=6$}
