@@ -43,56 +43,36 @@
 \renewcommand{\thetable}{\theenumi}
 \begin{document}
 \bibliographystyle{IEEEtran}
-\title{Question-3-3.2-22}
+\title{Question-7-7.2-26}
 \author{EE24BTECH11038 - MALAKALA BALA SUBRAHMANYA ARAVIND}
 % \maketitle
 % \newpage
 % \bigskip
 {\let\newpage\relax\maketitle}
 \textbf{Question}:\\
-Find the direction and normal vectors of the following line:\\
-x+2y=6
+The centre of circle is $\brak{2a,a-7}$. Find the values of a if the circle passes through the point $\vec{A}\brak{11,-9}$and has diameter $10\sqrt{2}$ units 
 \\
 \solution \\
 \begin{table}[!ht]
   \centering
   \input{tables/table.tex}
   \caption{variables used}
-  \label{tabQuestion-4-4.2-22}
 \end{table}\\
+The radius of circle is $5\sqrt{2}$\\
+Let the centre of the circle be $\vec{C}$\\ 
 \begin{align}
-    y &= mx + c \\
-    x &= 0 \Rightarrow y = c \\
-    x &= 1 \Rightarrow y = mx + c \\
-    x &= h + m  
-\end{align}
-\begin{align}
-    m^\top n = 0\\
-    n^\top x = n^\top h + \kappa n^\top m \\
-    \Rightarrow n (x - h) = 0 \\
-    n^\top x = c \\
-    c = n^\top h 
-\end{align}
-\begin{align}
-    \text{where} \quad n =\begin{pmatrix}-m \\1\end{pmatrix}
-\end{align}
-For the line \( 2y + x =  6 \):
-\begin{align}
-m &= -\frac{1}{2}
-\end{align}
-\begin{align}
-\text{Direction vector } m = \begin{pmatrix} 1 \\ m \end{pmatrix} = \begin{pmatrix} 1 \\ -\frac{1}{2} \end{pmatrix} \\
-\implies \begin{pmatrix} -2 \\ 1 \end{pmatrix}
-\end{align}
-The normal vector is defined by:
-\begin{align}
-n = \begin{pmatrix} -m \\ 1 \end{pmatrix} = \begin{pmatrix} \frac{1}{2} \\ 1 \end{pmatrix}\\
-\implies \begin{pmatrix} 1 \\ 2 \end{pmatrix}
+    \norm{\vec{A}-\vec{C}} &= 5\sqrt{2}\\
+    \vec{A}-\vec{C} &= \myvec{11-2a \\ -2-a}\\
+    \brak{11-2a}^2 +\brak{2+a}^2 &= 50\\
+    a^2-8a+15 &= 0\\
+    \brak{a-3}\brak{a-5}&=0\\
+    Therefore,    a = 3  or  a = 5
 \end{align}
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=\linewidth]{figs/Desktop.png}
+    \includegraphics[width=\linewidth]{figs/Figure_1.png}
     \caption{}
 \end{figure}
+
 \end{document}
 
