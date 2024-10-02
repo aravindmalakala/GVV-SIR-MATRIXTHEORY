@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Define the value of 'a'
-a = 3.0  # Set the value of 'a' here
+data = np.loadtxt('values.tex', delimiter=':', dtype=str, comments='%')
+a = float(data[1][1].strip())  # Set the value of 'a' here
 
 # Create theta values for the full circle
 theta = np.linspace(0, 2 * np.pi, 100)
