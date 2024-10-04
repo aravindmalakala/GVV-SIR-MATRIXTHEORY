@@ -33,7 +33,7 @@ plt.figure(figsize=(10, 10))
 plt.plot(x_values_circle, y_values_circle, label='$x^2 + y^2 = a^2$', color='blue')
 
 # Shade the area using Riemann sum for the upper minor arc
-plt.fill_between(x_r, y_upper, 0, color='lightblue', alpha=0.5, label='Shaded Upper Minor Arc Area ')
+plt.fill_between(x_r, y_upper, 0, color='lightblue', alpha=0.5, label='Shaded Upper Minor Arc Area')
 
 # Shade the area below the arc
 plt.fill_between(x_r, y_lower, 0, color='lightblue', alpha=0.5)
@@ -50,12 +50,14 @@ plt.xlim(-a - 1, a + 1)
 plt.ylim(-a - 1, a + 1)
 
 # Add labels and title
-plt.title('Circle, Vertical Line, and Shaded Areas ')
+plt.title('Circle, Vertical Line, and Shaded Areas')
 plt.xlabel('X-axis (x)')
 plt.ylabel('Y-axis (y)')
 plt.grid()
 plt.axis('equal')  # Set equal scaling for x and y axes
-plt.legend()
+
+# Move the legend to the top-left corner
+plt.legend(loc='upper left')
 
 # Show the plot
 plt.show()
