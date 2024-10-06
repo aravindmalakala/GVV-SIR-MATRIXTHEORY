@@ -60,7 +60,7 @@ x_circle_upper = circle(y_vals, r, h, k)
 x_circle_lower = h - np.sqrt(r**2 - (y_vals - k)**2)
 
 # Plot the curves
-plt.plot(x_parabola, y_vals, label=r'Parabola: $y^2 = 4x$', color='r')
+plt.plot(x_parabola, y_vals, label=r'Parabola: $y^2 = 2x$', color='r')
 plt.plot(x_circle_upper, y_vals, label=r'Circle: $(x - %.2f)^2 + (y - %.2f)^2 = %.2f^2$' % (h, k, r), color='b')
 plt.plot(x_circle_lower, y_vals, color='b')  # Lower part of the circle (no extra label)
 
