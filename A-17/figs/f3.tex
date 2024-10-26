@@ -1,0 +1,38 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\scriptsize]
+
+    % Circles
+    \draw (5.5,15) circle (0.25cm); % Top circle
+    \draw (5.5,12.5) circle (0.25cm); % Middle circle
+    \draw (5.5,10.25) circle (0.25cm); % Bottom circle
+    
+    % Diagonal connections
+    \draw (6.75,16.25) -- (10.5,12.5); % Top to center diagonal line
+    \draw (10.5,12.5) -- (6.75,8.75); % Center to bottom diagonal line
+    
+    % Rectangle around circles and diagonal lines
+    \draw (6.75,16.25) rectangle (5,8.75);
+    \draw [<->, >=Stealth] (5.65,15.25) -- (5.65,18) node[above] {3 holes M10 x 1.75 mm bolts};
+    
+    % Circle with arrow indicating rotation or force
+    \draw (8.25,12.25) circle (0.5cm); % Circle at center
+    \draw [->, >=Stealth] (8.25,12.25) -- (8.25,9.25) node[midway,right] {}; % Arrow pointing downward
+    
+    % Vertical dimensioning arrows
+    \draw [<->, >=Stealth] (4.5,10) -- (4.5,8.75) node[midway,xshift=-0.5cm] {20 mm}; % Bottom spacing
+    \draw [<->, >=Stealth] (4.5,12.25) -- (4.5,10.5) node[midway,xshift=-0.5cm] {40 mm}; % Middle spacing
+    \draw [<->, >=Stealth] (4.5,14.75) -- (4.5,12.75) node[midway,xshift=-0.5cm] {40 mm}; % Top spacing
+    \draw [<->, >=Stealth] (4.5,16) -- (4.5,15) node[midway,xshift=-0.5cm] {20 mm}; % Uppermost spacing
+    
+    % Dashed reference lines
+    \draw [dashed] (5.5,10) -- (5.5,8.25); % Bottom dashed line for alignment
+    \draw [dashed] (8.5,12) -- (8.5,8.25); % Center dashed line for alignment
+    
+    % Horizontal force dimension label
+    \draw [<->, >=Stealth] (5.5,7.75) -- (8.5,7.75) node[midway,yshift=-0.5cm] {150 mm}; % Dimension for horizontal force spacing
+    
+    % Force label
+    \node at (9.25,9.25) {$F = 10$ kN}; % Corrected position and label for force
+    
+\end{circuitikz}
+
