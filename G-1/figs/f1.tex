@@ -1,0 +1,36 @@
+
+\begin{circuitikz}
+    % Main connections and boxes
+    \draw (4.25,15.75) -- (4.25,13.5);
+    \draw (4.25,13.5) -- (5.5,13.5);
+    \draw (5.5,13.75) rectangle (8.25,13.25);
+    \draw (7.75,14) rectangle (8,13.75);
+    \draw (7.75,14.25) rectangle (13,14);
+
+    % Resistor and short lines
+    \draw (12,14.25) -- (12,13) -- (12,11.75);
+    \draw (12,11.75) to[R] (12,9.25);
+    \draw (8.5,8.25) -- (12,8.25);
+    \draw (10,13) rectangle (10.5,8.25);
+
+    % Dashed lines and arrow
+    \draw[dashed] (10.5,13) -- (14.25,13);
+    \draw[dashed] (13,14.25) -- (14.5,14.25);
+    \draw[<->, >=Stealth] (14.25,14.25) -- (14.25,13);
+
+    % Labels
+    \node[font=\Large] at (8.5,10.25) {Brass rod};
+    \node[font=\Large] at (14.75,13.75) {X};
+
+    % Voltage and AC source lines
+    \draw (4.25,15.75) -- (16.25,15.75);
+    \draw (15.5,14.25) -- (15.5,9.5);
+    \draw (12,9.25) -- (15.5,9.25);
+    \draw (15.5,9.25) -- (15.5,10);
+    \draw (15.5,14.25) -- (16.25,14.25);
+
+    % Voltage and AC labels
+    \node[font=\LARGE] at (15.75,16.25) {230V};
+    \node[font=\LARGE] at (16,13.5) {AC};
+\end{circuitikz}
+
