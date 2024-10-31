@@ -1,0 +1,108 @@
+\let\negmpace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{xparse}
+\usepackage{romannum}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}   
+\usepackage{amsmath}
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\title{2018-MA-53 to 65}
+\author{EE24BTECH11038 - MALAKALA BALA SUBRAHMANYA ARAVIND}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}[start=53]
+\item Let f$\brak{x}$ = $Z^3e^{Z^{2}}$ for Z $\in \mathbf{C}$ and let $\gamma$ be the circle z = $e^{i\theta}$, where $\theta$ varies from 0 to 4$\pi$. Then
+\begin{align*}
+    \frac{1}{2\pi i}\oint_{\gamma} \frac{f'\brak{z}}{f\brak{z}}\,dz=\cdots
+\end{align*}
+\item Let S be the surface of the solid
+\begin{align*}
+    \vec{V}=\cbrak{\brak{x,y,z}:0\leq x \leq 1,0 \leq y \leq 2,0\leq z \leq 3}
+\end{align*}
+Let $\hat{n}$ denote the unit outward normal to S and let
+\begin{align*}
+    \vec{F}\brak{x,y,z}=x\hat{i}+y\hat{j}+z\hat{k},\,\,\, \brak{x,y,z}\in \vec{V}
+\end{align*}
+Then the surface integral $\iint_{S} \vec{F}.\hat{n}\,dS$ equals to
+\item Let A be a 3$\times$3 matrix with real entries. If three solutions of the linear system of differential equations $\hat{x}\brak{t}$ = $Ax\brak{t}$ are given by
+\begin{align*}
+    \myvec{e^t-e^{2t} \\-e^t+e^{2t}\\e^t+e^{2t}} , \,\,   \myvec{-e^{-t}-e^{2t} \\-e^{-t}+e^{2t}\\e^{-t}+e^{2t}}, \,\,\, \myvec{e^{-t}+2e^{t} \\e^{-t}-2e^{t}\\-e^{-t}+2e^{t}}
+\end{align*}
+then the sum of the diagonal entries of A is equal to
+\item If $y_1\brak{x}$ = $e^{-x^{2}}$ is a solution of the differential equation
+\begin{align*}
+    xy^{''}+\alpha y{'}+\beta x^3y=0
+\end{align*}
+for some real $\alpha$, $\beta$,  then $\alpha \beta$
+\item Let $L^{2}\brak{\sbrak{0,1}}$ be the Hilbert space of all real valued square integrable functions on $\brak{0, 1}$ with the usual inner product. Let $\phi$ be the linear functional on $L_{2}\brak{\cbrak{0,1}}$ defined by
+\begin{align*}
+    \phi{\brak{f}}=\int_\frac{1}{4}^{\frac{3}{4}} 3\sqrt{2}f\,\,d\mu
+\end{align*}
+ where $\mu$ denotes the Lebesgue measure on $\sbrak{0,1}$. Then $\norm{\phi}$ =
+\item Let U be an orthonormal set in a Hilbert space H and let x $\in$ H be such that $\norm{x}$ = 2. Consider the set
+\begin{align*}
+    E=\cbrak{u\in \vec{U}:\abs{\langle x,u\rangle}\geq \frac{1}{4}}
+\end{align*}
+Then the maximum possible number of elements in E is
+\item If p$\brak{x}$ = 2 - $\brak{x + 1}$ + x$\brak{x + 1}$ - $\beta$x$\brak{x + 1}\brak{x - \alpha}$ interpolates the points $\brak{x, y}$ in the table then $\alpha$+ $\beta$
+\begin{table}[!ht]
+   \centering
+   \input{tables/table1.tex}
+   \caption{variables used}
+\end{table}\\
+\item If $\sin\brak{\pi x}$ = $a_0$ + $\sum_{n=1}^{\infty}$ $a_n \cos\brak{n\pi x}$ for $0<x<1$, then $\brak{a_0+a_1}\pi$ =
+\item For n=1,2,$\cdots$, let $f_n\brak{x}=\frac{2nx^{n-1}}{1+x}$, $x\in\sbrak{0,1}$. Then $\lim_{n \to \infty} \int_{0}^{1} f_n\brak{x}$
+\item Let $X_1$, $X_2$, $X_3$, $X_4$ be independent exponential random variables with mean 1, $\frac{1}{2}$, $\frac{1}{3}$, $\frac{1}{4}$, respectively. Then Y = min$\brak{X_1\,\,, X_2\,\,, X_3,\,\, X_4}$ has exponential distribution with mean equal to 
+\item Let X be the number of heads in 4 tosses of a fair coin by Person 1 and let Y be the number of heads in 4 tosses of a fair coin by Person 2. Assume that all the tosses are independent. Then the value of $\mathbf{P}\brak{X = Y}$ correct up to three decimal places is 
+\item Let $X_1$ and $X_2$ be independent geometric random variables with the same probability mass function given by $\mathbf{P}\brak{X = k}$ = p$\brak{1 - p}^{k-1}$, k = 1, 2,$\cdots$ Then the value of P$
+\brak{X_1 = 2|X_1 + X_2 = 4}$ correct up to three decimal places is 
+\item A certain commodity is produced by the manufacturing plants $P_1$ and $P_2$ whose capacities are 6 and 5 units, respectively. The commodity is shipped to markets $M_1, M_2, M_3 \text{and}\,\, M_4$ whose requirements are 1, 2, 3 and 5 units, respectively. The transportation cost per unit from plant $P_i$ to market $M_j$ is as follows:
+Then the optimal cost of transportation
+\begin{table}[!ht]
+   \centering
+   \input{tables/table.tex}
+   \caption{variables used}
+\end{table}\\
+\end{enumerate}
+\end{document}i
