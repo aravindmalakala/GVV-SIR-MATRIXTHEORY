@@ -1,0 +1,399 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{xparse}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment}
+\author{EE24BTECH11038 - Malakala Bala Subrahmanya Aravind}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=1]
+\item Contractor X is developing his bidding strategy against Contractor Y.The  ratio of Y`s bid price to X`s cost for the 30 previous bids in which contractor X has competed against Contractor Y in the given table 
+\begin{table}[!ht]
+  \centering
+  \input{tables/40.tex}
+\end{table}\\
+ Based on bidding behaviour of the contractor Y,the probability of winning against Contractor Y at a mark up of 8\% for the next project is 
+ \begin{enumerate}
+     \item 0\%
+     \item more than 0\% and less than 50\%
+     \item more than 0\% and less than 100\%
+     \item 100\%
+ \end{enumerate}
+\bigskip
+ \item Based on drained triaxial shear test on sands and clays the reprsentative variations of volumetric strain $\frac{\triangle v}{v}$ with the shear strain $\brak{\gamma}$ is shown in the figure. 
+ \begin{figure}[!ht]
+\centering
+\resizebox{0.25\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [<->, >=Stealth] (6,14.25) -- (6,10.75);
+\draw [->, >=Stealth] (6,12.5) -- (9.5,12.5);
+\draw [short] (6,12.5) .. controls (6.5,10.75) and (8,10.75) .. (9.25,11);
+\draw [short] (6,12.5) .. controls (6.75,11.75) and (6.75,12) .. (7.25,12.5);
+\draw [short] (7.25,12.5) .. controls (8,14) and (8.5,13.75) .. (9.5,14);
+\node [font=\small] at (9,14.25) {Curve P};
+\node [font=\small] at (9,10.75) {Curve Q};
+\node [font=\small] at (8.5,12.25) {sheer strain};
+\node [font=\small] at (6,14.5) {expansion};
+\node [font=\small] at (6,10.5) {compression};
+\node [font=\small, rotate around={-269:(0,0)}] at (5.5,12.75) {volume strain};
+\end{circuitikz}
+}%
+\end{figure}\\
+choose the CORRECT option regarding the representative behaviour exhibited by curve P and curve Q.
+\begin{enumerate}
+    \item Curve P represents dense sand and overconsolidated clay,while curve Q represents  loose sand and normally consolidated clay
+    \item Curve P represents dense sand and normally consolidated  clay,while curve Q represents  loose sand and  overconsolidated clay
+    \item Curve P represents loose sand and overconsolidated clay,while curve Q represents  dense sand and normally consolidated cay
+    \item Curve P represents loose sand and overconsolidated clay,while curve Q represents  dense sand and  consolidated clay
+\end{enumerate}
+\bigskip
+\item A fluid flowing steadily in a cirucar pipe of radius R has a velocity that is everywhere parllel to the axis of the pipe The velocity distribution along the radial direction is $V_r=U\brak{1-\frac{r^3}{R^2}}$ where r is the radial distance as measured fromthe pipe axis and U is the maximum velocity at r=0.the average velocity in the pipe is 
+\begin{enumerate}
+    \item $\frac{U}{2}$
+    \item $\frac{U}{3}$
+    \item $\frac{U}{4}$
+    \item $\frac{5U}{6}$
+\end{enumerate}
+\bigskip
+\item A water sample is analyzed for coliform organisms by the multiple-tube fermentation method. The results of confirmed test are as follow: 
+\begin{table}[!ht]
+  \centering
+  \input{tables/43.tex}
+\end{table}\\
+the most proable number(MPN)of coliform organisms for the above results is to obtained using the following MPN index.
+\begin{table}[!ht]
+  \centering
+  \input{tables/44.tex}
+\end{table}\\
+\begin{enumerate}
+    \item 1100000
+    \item 110000
+    \item 1100
+    \item 110
+\end{enumerate}
+\bigskip
+\item Ammonia nitrogen is present in a given wastewater sample as the ammonium ion $\brak{NH^+_4}$ and ammonia $\brak{NH_3}$. If pH is the only deciding factor for the proportion of these two constituents, which of the following is a correct statement?
+\begin{enumerate}
+    \item At pH above 9.25, only $\brak{NH^+_4}$  will be present
+    \item At pH below 9.25, $\brak{NH_3}$ will be predominant
+    \item At pH 7.0, $\brak{NH^+_4}$ and $\brak{NH_3}$  will be found in equal measures.
+    \item At pH 7.0, $\brak{NH^+_4}$  will be predominant.
+
+\end{enumerate}
+\bigskip
+\item On a road, the speed-density relationship of a traffic stream is given by u = 70 - 0.7k At the capacity condition, the average time headway will be
+\begin{enumerate}
+    \item 0.5 s
+    \item 1.0 s
+    \item 1.6 s
+    \item 2.1 s
+\end{enumerate}
+\bigskip
+\item the values of abscissa(x) and ordinate (y) of a curve are as follow 
+\begin{table}[!ht]
+  \centering
+  \input{tables/46.tex}
+\end{table}\\
+By simpson`s $\frac{1}{3}$rd rule the area under the curve is 
+\bigskip
+\item Refer the truss as shown in the figure 
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [short] (11,14.5) -- (17.25,14.5);
+\draw [short] (17.25,14.5) -- (22,9.5);
+\draw [short] (22,9.5) -- (23.25,8.75);
+\draw [short] (22,9.5) -- (21,8.75);
+\draw [short] (21,8.75) -- (23.25,8.75);
+\draw  (21.5,8.5) circle (0.25cm);
+\draw  (22.25,8.5) circle (0.25cm);
+\draw  (23,8.5) circle (0.25cm);
+\draw [line width=1.3pt, short] (21.25,8.25) -- (23.5,8.25);
+\draw [line width=1.3pt, short] (21.25,8.25) -- (21,8.25);
+\draw [line width=0.3pt, short] (21,8.25) -- (21.25,8);
+\draw [line width=0.3pt, short] (21.25,8.25) -- (21.5,8);
+\draw [line width=0.3pt, short] (21.5,8.25) -- (21.75,8);
+\draw [line width=0.3pt, short] (21.75,8.25) -- (22,8);
+\draw [line width=0.3pt, short] (22,8.25) -- (22.25,8);
+\draw [line width=0.3pt, short] (22.25,8.25) -- (22.5,8);
+\draw [line width=0.3pt, short] (22.5,8.25) -- (22.75,8);
+\draw [line width=0.3pt, short] (22.75,8.25) -- (23,8);
+\draw [line width=0.3pt, short] (23,8.25) -- (23.25,8);
+\draw [line width=0.3pt, short] (23.25,8.25) -- (23.5,8);
+\draw [line width=0.3pt, short] (22,9.5) -- (5.75,9.5);
+\draw [line width=0.3pt, short] (5.75,9.5) -- (11,14.5);
+\draw [line width=0.3pt, short] (11,14.5) -- (14,9.5);
+\draw [line width=0.3pt, short] (17.25,14.5) -- (14,9.5);
+\draw [line width=0.3pt, short] (5.75,9.5) -- (7,8.5);
+\draw [line width=0.3pt, short] (5.75,9.5) -- (4.75,8.5);
+\draw [line width=1.3pt, short] (4.75,8.5) -- (7,8.5);
+\draw [line width=0.2pt, short] (4.75,8.5) -- (5,8.25);
+\draw [line width=0.2pt, short] (5,8.5) -- (5.25,8.25);
+\draw [line width=0.2pt, short] (5.5,8.5) -- (5.75,8.25);
+\draw [line width=0.2pt, short] (5.5,8.5) -- (7.5,8.5);
+\draw [line width=0.2pt, short] (5.25,8.5) -- (5.5,8.25);
+\draw [line width=0.2pt, short] (6,8.5) -- (6.25,8.25);
+\draw [line width=0.2pt, short] (5.75,8.5) -- (6,8.25);
+\draw [line width=0.2pt, short] (6.5,8.5) -- (6.75,8.25);
+\draw [line width=0.2pt, short] (6.5,8.5) -- (6.25,8.5);
+\draw [line width=0.2pt, short] (6.25,8.5) -- (6.5,8.25);
+\draw [line width=1.5pt, ->, >=Stealth] (14,9.5) -- (14,7);
+\node [font=\large] at (14.5,7.25) {\textbf{F}};
+\node [font=\large] at (11,15) {$P$};
+\node [font=\large] at (5.5,9.75) {$Q$};
+\node [font=\large] at (17,14.75) {$R$};
+\node [font=\large] at (22.25,9.75) {$S$};
+\node [font=\large] at (14.25,9) {$T$};
+\draw [line width=0.5pt, <->, >=Stealth] (5.5,7.5) -- (13.5,7.5);
+\draw [line width=0.5pt, <->, >=Stealth] (14.25,7.75) -- (22.25,7.5);
+\node [font=\large] at (9,7) {$L$};
+\node [font=\large] at (18.5,7) {$L$};
+\end{circuitikz}
+}%
+\end{figure}
+If load ,$\mathbf{F}=10\sqrt{3}KN$ moment of inertia $\mathbf{I}=8.33 \times 10^6 mm^4$area of crossection ,A=$10^4mm^2$ and length L=2m for all the members of the truss the compressive stress carried by member Q-R is 
+\bigskip
+\item  A prismatic cantilever prestressed concrete beam of span length, L = 1.5m has one straight tendon placed in the cross-section as shown in the following figure (not to scale). The total prestressing force of 50 kN in the tendon is applied at $d_p$ = 50mm from the top in the cross-section of width,  b = 200mm and depth, d = 300mm
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+
+% Vertical line
+\draw [line width=1.5pt, short] (0.75,17.5) -- (0.75,15.5);
+
+% Zig-zag pattern
+\draw [short] (0.75,17.5) -- (0.5,17.25);
+\draw [short] (0.75,17.25) -- (0.5,17);
+\draw [short] (0.75,17) -- (0.5,16.75);
+\draw [short] (0.75,16.75) -- (0.5,16.5);
+\draw [short] (0.75,16.5) -- (0.5,16.25);
+\draw [short] (0.75,16.25) -- (0.5,16);
+\draw [short] (0.75,16) -- (0.5,15.75);
+
+% Left block
+\draw [fill={rgb,255:red,36; green,31; blue,49}] (0.75,16.75) rectangle (1,16.5);
+\draw [fill={rgb,255:red,119; green,118; blue,123}] (0.75,16.75) rectangle (8.25,16.25);
+
+% Load arrow
+\draw [->, >=Stealth] (8,18.25) -- (8,16.75);
+\node [font=\large] at (8.25,18.25) {\textbf{P}};
+
+% Length marker
+\draw [<->, >=Stealth] (0.75,15.25) -- (8.25,15.25);
+\node [font=\large] at (3.25,15.5) {\textbf{L}};
+
+% Right block
+\draw [fill={rgb,255:red,119; green,118; blue,123}] (10.25,18) rectangle (12.5,14.25);
+
+% Circle with white fill
+\fill [white] (11.25,17.5) circle (0.25cm);  % Fills the circle with white
+\draw (11.25,17.5) circle (0.25cm);          % Draws the circle outline
+
+% Dimension markers
+\draw [<->, >=Stealth] (9.75,18) -- (9.75,14.5);
+\draw [<->, >=Stealth] (10.5,14) -- (12.5,14);
+\node [font=\large] at (9.5,16.75) {\textbf{d}};
+\node [font=\large] at (11,13.75) {\textbf{b}};
+
+% Prestressing tendon arrow
+\draw [->, >=Stealth] (11.25,19) -- (11.25,17.5);
+\node [font=\large] at (11.25,19.25) {$\text{Prestressing Tendon}$};
+
+\end{circuitikz}
+}%
+\end{figure}
+If the concentrated load,P = 5KN the resultant stress (in MPa, in integer) experienced at point `Q' will be 
+\bigskip
+\item A column is subjected to a total load P of 60 kN supported through a bracket connection, as shown in the figure (not to scale).
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [line width=1.1pt, short] (1.25,14) -- (1.25,6.5);
+\draw [line width=1.1pt, short] (1.25,13) -- (8.5,13);
+\draw [line width=1.1pt, short] (8.5,13) -- (8.5,11);
+\draw [line width=1.1pt, short] (1.25,8.75) -- (6.75,8.75);
+\draw [line width=1.1pt, short] (6.75,8.75) -- (8.5,11);
+\draw [line width=0.7pt, short] (0.75,13.75) -- (3.25,13.75);
+\draw [line width=0.7pt, short] (3.25,13.75) -- (3.5,13.25);
+\draw [line width=0.7pt, short] (3.5,13.25) -- (3.75,14.25);
+\draw [line width=0.7pt, short] (3.75,14.25) -- (4,13.75);
+\draw [line width=0.7pt, short] (4,13.75) -- (6.5,13.75);
+\draw [line width=0.7pt, short] (5.75,13.75) -- (5.75,7.5);
+\draw [line width=0.7pt, short] (1.25,7.5) -- (3.25,7.5);
+\draw [line width=0.7pt, short] (4,7.5) -- (6.25,7.5);
+\draw [ line width=0.7pt ] (2.25,12.25) circle (0.25cm);
+\draw [ line width=0.7pt ] (2.25,11) circle (0.25cm);
+\draw [ line width=0.7pt ] (2.25,9.75) circle (0.25cm);
+\draw [ line width=0.7pt ] (5.25,12.25) circle (0.25cm);
+\draw [ line width=0.7pt ] (5.25,11) circle (0.25cm);
+\draw [ line width=0.7pt ] (5.25,9.75) circle (0.25cm);
+\draw [line width=0.7pt, dashed] (4,14.5) -- (4,6.75);
+\draw [line width=0.7pt, ->, >=Stealth] (7.5,14) -- (7.5,13);
+\draw [line width=0.7pt, <->, >=Stealth] (4,15) -- (7.5,15);
+\draw [line width=0.7pt, <->, >=Stealth] (4,14.5) -- (5.5,14.5);
+\draw [line width=0.7pt, <->, >=Stealth] (2.25,14.5) -- (3.75,14.5);
+\draw [short] (3.25,7.5) -- (3.5,7);
+\draw [short] (3.5,7) -- (3.75,8);
+\draw [short] (3.75,8) -- (4,7.5);
+\draw [<->, >=Stealth] (0.75,12.25) -- (0.75,11.25);
+\draw [<->, >=Stealth] (0.75,11) -- (0.75,9.75);
+\node [font=\LARGE] at (9,13.75) {P=60KN};
+\node [font=\small] at (5.5,15.5) {$100mm$};
+\node [font=\small] at (4.75,14.75) {$40mm$};
+\node [font=\small] at (3,14.75) {$40mm$};
+\node [font=\small] at (0.25,11.75) {$30mm$};
+\node [font=\small] at (0,10.25) {$30mm$};
+\node [font=\normalsize] at (4.75,11) {$R$};
+\end{circuitikz}
+}%
+\end{figure}
+The resultant force in the bolt R
+\bigskip
+\item Employ stiffness matrix approach for the simply supported as shown in the figure to calculate unknown displacements/rotations. Take length ,L=8m modulus of elasticity ,E=$3\times 10^4N/mm^2$ moment of inertia I=225$\times 10^6 mm^4$
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (-0.5,13.75) rectangle (8.25,12.5);
+\draw  (8.25,13.5) rectangle (13,13);
+\draw [short] (-0.5,12.5) -- (0.25,11.5);
+\draw [short] (-0.5,12.5) -- (-1.25,11.5);
+\draw [short] (-1.25,11.5) -- (0.25,11.5);
+\draw [short] (-1.25,11.5) -- (-1,11.25);
+\draw [short] (-1,11.5) -- (-0.75,11.25);
+\draw [short] (-0.75,11.5) -- (-0.5,11.25);
+\draw [short] (-0.5,11.5) -- (-0.25,11.25);
+\draw [short] (-0.25,11.5) -- (0,11.25);
+\draw [short] (0,11.5) -- (0.25,11.25);
+\draw [short] (13,13) -- (13.75,12.5);
+\draw [short] (13,13) -- (12.25,12.5);
+\draw [short] (12.25,12.5) -- (13.75,12.5);
+\draw  (12.25,12.25) circle (0.25cm);
+\draw  (13,12.25) circle (0.25cm);
+\draw  (13.75,12.25) circle (0.25cm);
+\draw [short] (11.75,12) -- (14.25,12);
+\draw [short] (11.75,12) -- (12,11.75);
+\draw [short] (12.25,12) -- (12.5,11.75);
+\draw [short] (12.75,12) -- (13,11.75);
+\draw [short] (13.25,12) -- (13.5,11.75);
+\draw [short] (13.75,12) -- (14,11.75);
+\draw [->, >=Stealth] (8,15.75) -- (8,14);
+\node [font=\normalsize] at (8.25,15.25) {\textbf{P}};
+\node [font=\normalsize] at (3,12.25) {$E,2l$};
+\node [font=\normalsize] at (10.5,12.75) {$E,l$};
+\draw [<->, >=Stealth] (-0.5,10.5) -- (8.5,10.5);
+\draw [<->, >=Stealth] (8.25,11) -- (13,11);
+\node [font=\normalsize] at (4.5,9.75) {$L/2$};
+\node [font=\normalsize] at (10,10.5) {$L/2$};
+\node [font=\normalsize] at (-0.5,14.5) {\textbf{A}};
+\node [font=\normalsize] at (12.75,14.25) {\textbf{C}};
+\end{circuitikz}
+}%
+
+\end{figure}
+The mid-span deflection of the beam in mm under P=100KN in downward direction will be
+\bigskip
+
+
+\item A square plate O-P-Q-R of a linear elastic material with sides 1.0m is loaded in a state of plane stress under a given stress condition the plate deforms ti a new configuration O-P'-Q'-R' as shown in the figure Under the given deformation the edges of  aplate remain straight.
+\begin{figure}[!ht]
+\centering
+\resizebox{0.25\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [line width=1.1pt, ->, >=Stealth] (-4.75,9.25) -- (-4.75,15.75);
+\draw [line width=1.1pt, ->, >=Stealth] (-4.75,9.25) -- (3.5,9.25);
+\draw [ line width=0.6pt ] (-4.75,13) rectangle (-0.25,9.25);
+\draw [line width=0.6pt, dashed] (-4.75,13.75) -- (-2.25,13.75);
+\draw [line width=0.6pt, dashed] (-4.75,9.25) -- (1,10);
+\draw [line width=0.6pt, dashed] (-2.25,13.75) -- (1,10);
+\node [font=\normalsize] at (1.75,9.75) {10mm};
+\draw [line width=0.6pt, <->, >=Stealth] (1,10) -- (1,9.25);
+\draw [line width=0.6pt, <->, >=Stealth] (-0.25,9) -- (1,9);
+\draw [line width=0.6pt, <->, >=Stealth] (-5,13.75) -- (-5,13);
+\draw [line width=0.6pt, <->, >=Stealth] (-2.25,14) -- (-0.25,14);
+\node [font=\normalsize] at (0.25,8.75) {20mm};
+\node [font=\normalsize] at (-5.5,13.5) {10mm};
+\node [font=\normalsize] at (-1.25,14.5) {10mm};
+\node [font=\normalsize] at (-4.5,14.25) {R`};
+\node [font=\normalsize] at (-2.5,14.25) {Q`};
+\node [font=\normalsize] at (-5,12.75) {R};
+\node [font=\normalsize] at (0,13) {Q};
+\node [font=\normalsize] at (1.25,10.25) {P`};
+\node [font=\normalsize] at (0,9.5) {P};
+\node [font=\normalsize] at (-5,9) {O};
+\node [font=\normalsize] at (3.25,8.75) {X};
+\node [font=\normalsize] at (-5.25,15.25) {Y};
+\end{circuitikz}
+}%
+
+
+\end{figure}\\
+\bigskip
+\item A small project has 12 activities -N,P,Q,R,S,T,U,V,W,X,Y and Z the relationship among these activities and the duration of these activities are given in the table. The total float of activity "V" in integer
+\begin{table}[!ht]
+  \centering
+  
+  \input{tables/13.tex}
+\end{table}\\
+\end{enumerate}
+\end{document}
